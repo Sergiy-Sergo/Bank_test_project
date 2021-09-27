@@ -14,7 +14,7 @@
     </div>
     
     <div  class="box2" v-for="item in getBanksList" :key="item._id">
-      <div v-if="!isLoading && !hasError">
+      <div v-if="!getLoading && !getError">
       <card class="box" :item="item" /></div>
     </div>
   </div>
